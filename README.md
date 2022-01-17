@@ -22,10 +22,10 @@ contingency functionality such as secret questions.
   - User input 1-6 selects the functionality. User input 5 prints the help screen.
   
   The choices are:
-    ● #1 create a new entry
-    ● #2 unlock a specific password with the submitted address/handle and master key
-    ● #3 print a summary of every saved entry in the database file (note: encrypted asswords are only shown as $$$$, because they contain characters that
+    - #1 create a new entry
+    - #2 unlock a specific password with the submitted address/handle and master key
+    - #3 print a summary of every saved entry in the database file (note: encrypted asswords are only shown as $$$$, because they contain characters that
          can’t be conventionally printed, such as ASCII 0-31 & 127).
-    ● #4 clear the save file, removing all entries
-    ● #5 Print help menu, that is also visible the first time the program runs
-    ● #6 end program
+    - #4 clear the save file, removing all entries
+    - #5 Print help menu, that is also visible the first time the program runs
+    - #6 end program
