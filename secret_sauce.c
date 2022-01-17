@@ -6,10 +6,10 @@
 #pragma warning(disable : 4996)
 
 #define LINE 64						/*Maximum length for every user submitted string*/
-#define MIN_HANDLE 5				/*Minimum address/handle is 5 characters*/
-#define MIN_MASTER 3				/*Minimum master key is 3 characters long*/
+#define MIN_HANDLE 5					/*Minimum address/handle is 5 characters*/
+#define MIN_MASTER 3					/*Minimum master key is 3 characters long*/
 #define MIN_KEY 10					/*Minimum password length is 10 characters*/
-#define FILENAME "secret.bin"		/*Binary database is used for added security.*/
+#define FILENAME "secret.bin"				/*Binary database is used for added security.*/
 
 /*The central data structure of the program. Passwords are stored in an encrypted state in a binary file as a part of these "secret" structures,
 this way the information is harder to access and parse outside this program. The secret structure stores the handle to access the password, encrypted password that
@@ -154,7 +154,7 @@ secret make_secret()
 	char master_key[LINE] = { 0 };
 	int success = 0, handle_size = 0, m_key_size = 0, s_key_size = 0, secrets = 0, match = 0;
 
-	printf("\nIn order to store a password to the save file, you need to submit an address/site or other handle that is at minimum %d characters long,\npassword that is at minimum %d characters long and the master key used in encryption.\n\nPlease note that in the event you forget your master key the password cannot be recalled.\nMaximum input length is %d characters. Letters, numbers and most common symbols (question marks, exclamation marks, dots, asterix, plus, minus parenthesis etc.) are allowed. White space and special characters such as '¤' is not allowed.\n\n",MIN_HANDLE, MIN_KEY, LINE);
+	printf("\nIn order to store a password to the save file, you need to submit an address/site or other handle that is at minimum %d characters long,\npassword that is at minimum %d characters long and the master key used in encryption.\n\nPlease note that in the event you forget your master key the password cannot be recalled.\nMaximum input length is %d characters. Letters, numbers and most common symbols (question marks, exclamation marks, dots, asterix, plus, minus parenthesis etc.) are allowed. White space and special characters such as 'Â¤' is not allowed.\n\n",MIN_HANDLE, MIN_KEY, LINE);
 
 	do {
 		success = read_input_line(handle, "Enter the address/handle:\n");
