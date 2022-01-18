@@ -1,5 +1,5 @@
 # “The Secret Sauce” Password manager
-Pure C project for implementing and accessing a secure password storage medium in a binary data file.
+Pure C project for implementing and accessing a secure password storage medium in a binary data file using the command line as an interface.
 
 This is a program that helps users manage passwords in a secure format. The program
 keeps saved entries in a binary save file “secret.bin”, located at the directory of the program
