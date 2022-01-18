@@ -4,8 +4,8 @@ Pure C project for implementing and accessing a secure password storage medium i
 This is a program that helps users manage passwords in a secure format. The program
 keeps saved entries in a binary save file “secret.bin”, located at the directory of the program
 and created at the first instance of the program. Passwords are embedded inside structures
-“secrets”, and are only stored in an encrypted format. Encryption is formed as a XOR of the
-submitted password and the submitted master key.
+“secrets”, and are only stored in an encrypted format. Encryption is performed by bitwise XOR operation of the
+submitted password and master key.
 
 The passwords are only recallable if the user remembers the master key used while
 encrypting them. In the case the key is lost, the passwords are also lost, as there is no
